@@ -76,9 +76,7 @@ class _UpdateProfileState extends State<UpdateProfile> {
                         onTap: () async {
                           String? pickedImagePath = await profileController
                               .pickImage(ImageSource.gallery);
-                          if (pickedImagePath != null) {
-                            imagePath.value = pickedImagePath;
-                          }
+                          imagePath.value = pickedImagePath;
                         },
                         child: Container(
                           padding: const EdgeInsets.all(15),
@@ -97,9 +95,7 @@ class _UpdateProfileState extends State<UpdateProfile> {
                         onTap: () async {
                           String? pickedImagePath = await profileController
                               .pickImage(ImageSource.camera);
-                          if (pickedImagePath != null) {
-                            imagePath.value = pickedImagePath;
-                          }
+                          imagePath.value = pickedImagePath;
                         },
                         child: Container(
                           padding: const EdgeInsets.all(15),
